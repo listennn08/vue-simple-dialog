@@ -156,4 +156,4 @@ You can use css or scss to design your theme
 |button.yes|string|optional|ok|
 |button.no|string|optional|cancel|
 |mount|string|optional|''|
-|callback|(confirm: boolan) => void|optional|null|
+|callback|(confirm: boolean) => void|optional|null|
