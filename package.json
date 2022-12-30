@@ -1,7 +1,7 @@
 {
-  "name": "vue-simple-dialog",
+  "name": "vue-simple-confirm",
   "version": "1.0.0",
-  "description": "Simple dialog component for Vue 3",
+  "description": "Simple popup component for Vue 3",
   "files": [
     "dist"
   ],
