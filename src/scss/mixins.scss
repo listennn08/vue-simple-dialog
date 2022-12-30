@@ -1,0 +1,104 @@
+@mixin ios {
+  background-color: rgba(0, 0, 0, 0.3);
+  & .sd {
+    &-container {
+      background: rgba(255, 255, 255, 0.85);
+      margin-top: 20px;
+    }
+    &-body {
+      border-radius: 8px;
+
+      h3 {
+        margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+
+    &-text {
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #bababa;
+    }
+    &-btn {
+      width: 50%;
+      border: 0;
+      padding: 0;
+      margin: 0;
+      line-height: 45px;
+      color: #007aff;
+      text-transform: uppercase;
+
+      &:first-child {
+        border-end-start-radius: 7px;
+        border-right: 1px solid #bababa;
+      }
+      &:last-child {
+        border-end-end-radius: 7px;
+      }
+    }
+
+    &-footer {
+      display: flex;
+    }
+  }
+}
+
+@mixin material {
+  & .sd {
+    &-container {
+      font-family: 'Roboto', sans-serif;
+      box-shadow: 0 -2px 25px 0 rgba(0, 0, 0, 0.15),
+        0 13px 22px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 0;
+    }
+    &-body {
+      padding-top: 21px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 12px;
+
+      h3 {
+        margin: 0 0 14px;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    &-text {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-footer {
+      height: 48px;
+      padding-left: 16px;
+      padding-right: 15px;
+      padding-bottom: 8px;
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &-btn {
+      height: 36px;
+      background-color: transparent;
+      border: 0;
+      font-weight: 500;
+      font-size: 14px;
+      color: rgba(33, 150, 243, 0.9);
+      text-transform: uppercase;
+      padding-top: 0;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-bottom: 0;
+      margin-top: 6px;
+      margin-left: 4px;
+      margin-right: 4px;
+      margin-bottom: 6px;
+
+      &:hover {
+        background-color: rgba(99, 99, 99, 0.2);
+      }
+    }
+  }
+}

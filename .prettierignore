@@ -1,0 +1,7 @@
+# Ignore artifacts:
+.husky
+dist
+*-lock.yaml
+*-workspace.yaml
+package.json
+README.md

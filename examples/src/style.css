@@ -1,0 +1,38 @@
+.sd-layer.custom {
+  background-color: rgba(225, 225, 225, 0.4);
+}
+
+.sd-layer.custom .sd-container {
+  border: 1px solid #000;
+}
+
+.sd-layer.custom .sd-body {
+  text-align: center;
+}
+.sd-layer.custom .sd-body h3 {
+  border-bottom: 1px solid #000;
+  margin: 0;
+  padding: 0.5rem;
+}
+.sd-layer.custom .sd-text {
+  padding: 0.5rem;
+}
+.sd-layer.custom .sd-btn {
+  width: 50%;
+  border: 0;
+  background-color: transparent;
+}
+.sd-layer.custom .sd-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s all;
+}
+
+.sd-layer.custom .sd-btn:first-child {
+  border-right: 1px solid #000;
+}
+.sd-layer.custom .sd-footer {
+  display: flex;
+  min-height: 2rem;
+  border-top: 1px solid #000;
+}
