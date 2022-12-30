@@ -146,6 +146,7 @@ You can use css or scss to design your theme
 |Name|Type|Require|Default|
 |:---:|:---:|:---:|:---:|
 |theme|`ios / material`|optional|ios|
+|layoutClose|boolean|optional|false|
 
 ## API
 |Name|Type|Require|Default|
