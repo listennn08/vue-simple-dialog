@@ -1,17 +1,17 @@
-interface Options {
+export interface Options {
   theme: 'ios' | 'material'
   layoutClose: boolean
 }
 
-interface Params {
+export interface Params {
   mount?: string
   title?: string
   message: string
-  button?: {
+  button?: Partial<{
     yes: string
-    no?: string
-  }
+    no: string
+  }>
   callback?: (confirm: boolean) => void
 }
 
-type ConfirmFn = (params: Params) => void
+export type ConfirmFn = (params: Params) => void

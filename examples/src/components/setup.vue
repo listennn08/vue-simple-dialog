@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { inject, onMounted } from 'vue'
-import { confirm } from 'vue-simple-dialog'
+import { inject } from 'vue'
+import { confirm } from 'vue-simple-confirm'
 
 const $confirm = inject(confirm)!
 
@@ -9,17 +9,16 @@ const showPopup = () =>
     title: 'Title',
     message: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. `,
     button: {
-      yes: 'Good',
+      yes: 'confirm',
     },
     callback(confirm) {
-      if (confirm) alert('Ok')
+      if (confirm) alert('You click confirm')
     },
   })
 </script>
 <template>
   <div>
     <button @click="showPopup">Show</button>
-    <Dialog />
   </div>
   <div id="second"></div>
 </template>

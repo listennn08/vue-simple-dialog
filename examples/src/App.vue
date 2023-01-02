@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Normal from './components/normal.vue'
-import Setup from './components/setup.vue'
+import normal from './components/normal.vue'
+import setup from './components/setup.vue'
 </script>
 <template>
   <div>
-    <Setup />
-    <Normal />
+    <setup />
+    <vue-simple-confirm />
   </div>
 </template>
 <style scoped></style>

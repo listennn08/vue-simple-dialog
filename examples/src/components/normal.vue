@@ -1,6 +1,5 @@
 <template>
   <button @click="showPopup">Show</button>
-  <Dialog />
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -17,10 +16,6 @@ export default defineComponent({
       this.confirm({
         title: 'Title',
         message: 'message',
-        button: {
-          yes: 'yes',
-          no: 'no',
-        },
         callback(confirm) {
           if (confirm) alert('Ok')
         },

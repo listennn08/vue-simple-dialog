@@ -1,6 +1,7 @@
 import { ref, h, Teleport, type Component } from 'vue'
 import { Confirm } from './components/confirm'
 import { defaultTo } from './utils'
+import type { ConfirmFn, Options, Params } from './types'
 
 const defaultToEmpty = (v?: string) => defaultTo(v, '')
 
@@ -50,7 +51,7 @@ export default function (opts?: Options) {
   }
 
   return {
-    Dialog: vnode,
+    Confirm: vnode,
     show,
     confirm,
   }
