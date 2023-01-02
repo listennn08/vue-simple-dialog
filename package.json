@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-confirm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple popup component for Vue 3",
   "files": [
     "dist"
