@@ -7,7 +7,7 @@
 ## Install
 
 ```
-pnpm install --save vue-simple-dialog
+pnpm install --save vue-simple-confirm
 ```
 
 ## Quick Start
@@ -17,7 +17,7 @@ In `main.ts` or `main.js`
 import { createApp } from 'vue'
 import App from './App.vue'
 import VueSimpleConfirm from 'vue-simple-confirm'
-import 'vue-simple-dialog/dist/index.css'
+import 'vue-simple-confirm/dist/index.css'
 
 const app = createApp(App)
 
@@ -67,7 +67,7 @@ Use `Option API`
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { confirm } from 'vue-simple-dialog'
+import { confirm } from 'vue-simple-confirm'
 
 export default defineComponent({
   inject: {
