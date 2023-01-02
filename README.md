@@ -2,7 +2,7 @@
 
 ## Preview
 
-![preview](https://user-images.githubusercontent.com/52522402/210203423-b3215505-18ed-4c3c-a064-212b87d65254.mov)
+![vue-simple-confirm-preview](https://user-images.githubusercontent.com/52522402/210203965-8f58fe9f-4314-4e02-bd6c-582f13d5c51a.gif)
 
 ## Install
 
