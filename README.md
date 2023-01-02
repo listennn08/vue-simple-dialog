@@ -40,7 +40,9 @@ const showPopup = () => $confirm({
   title: 'Title',
   mount: '#second',
   message: 'string',
-  okBtnText: 'Good',
+  button: {
+    yes:'Good',
+  },
   okCallback() {
     alert('Ok')
   }
@@ -76,7 +78,9 @@ export default defineComponent({
       this.confirm({
         title: 'Title',
         message: 'string',
-        okBtnText: 'Good',
+        button: {
+          yes:'Good',
+        },
         okCallback() {
           alert('Ok')
         }
