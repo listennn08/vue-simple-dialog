@@ -1,5 +1,9 @@
 # Vue Simple Dialog
 
+## Preview
+
+![preview](https://user-images.githubusercontent.com/52522402/210203423-b3215505-18ed-4c3c-a064-212b87d65254.mov)
+
 ## Install
 
 ```
@@ -12,13 +16,13 @@ In `main.ts` or `main.js`
 ```typescript
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueSimpleDialog from 'vue-simple-dialog'
+import VueSimpleConfirm from 'vue-simple-confirm'
 import 'vue-simple-dialog/dist/index.css'
 
 const app = createApp(App)
 
 app
-  .use(VueSimpleDialog)
+  .use(VueSimpleConfirm)
   .mount('#app')
 ```
 
@@ -28,7 +32,7 @@ Use `setup script`
 ```vue
 <script setup lang="ts">
 import { inject } from 'vue'
-import { confirm } from 'vue-simple-dialog'
+import { confirm } from 'vue-simple-confirm'
 
 const $confirm = inject(confirm)!
 
@@ -46,7 +50,8 @@ const showPopup = () => $confirm({
   <button @click="showPopup">
     Show
   </button>
-  <Dialog />
+  <div id="second"></div>
+  <vue-simple-confirm />
 </template>
 ```
 
@@ -56,7 +61,7 @@ Use `Option API`
   <button @click="showPopup">
     Show
   </button>
-  <Dialog />
+  <vue-simple-confirm />
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -70,7 +75,6 @@ export default defineComponent({
     showPopup() {
       this.confirm({
         title: 'Title',
-        mount: '#second',
         message: 'string',
         okBtnText: 'Good',
         okCallback() {
@@ -82,12 +86,13 @@ export default defineComponent({
 })
 </script>
 ```
+You also can put component in App.vue and inject confirm function in anywhere you want to use.
 
 ## Configuration
 
 You can config your dialog theme in here, we provide `ios` and `material` design, default is `ios`.
 ```typescript
-app.use(VueSimpleDialog, {
+app.use(VueSimpleConfirm, {
   // options configuration
   theme: 'ios'
 })
@@ -95,7 +100,7 @@ app.use(VueSimpleDialog, {
 
 If you want to use your custom design, you can add your theme name and add theme to css file like below.
 ```typescript
-app.use(VueSimpleDialog, {
+app.use(VueSimpleConfirm, {
   // options configuration
   theme: 'custom'
 })
