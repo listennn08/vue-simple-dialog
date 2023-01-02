@@ -3,7 +3,7 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { confirm } from 'vue-simple-dialog'
+import { confirm } from 'vue-simple-confirm'
 
 export default defineComponent({
   inject: {
