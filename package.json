@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-confirm",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple popup component for Vue 3",
   "files": [
     "dist"
@@ -16,6 +16,7 @@
     "prepare": "husky install"
   },
   "keywords": [
+    "confirm",
     "dialog",
     "simple",
     "vue",
@@ -23,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/listennn08/vue-simple-dialog"
+    "url": "https://github.com/listennn08/vue-simple-confirm"
   },
-  "homepage": "https://github.com/listennn08/vue-simple-dialog",
-  "bugs": "https://github.com/listennn08/vue-simple-dialog/issues",
+  "homepage": "https://github.com/listennn08/vue-simple-confirm",
+  "bugs": "https://github.com/listennn08/vue-simple-confirm/issues",
   "author": "matt",
   "license": "MIT",
   "devDependencies": {

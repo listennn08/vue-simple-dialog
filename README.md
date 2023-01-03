@@ -1,4 +1,4 @@
-# Vue Simple Dialog
+# Vue Simple Confirm
 
 ## Preview
 
